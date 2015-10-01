@@ -1,5 +1,15 @@
 <div class="col-md-8">
   <div class="media">
     <%= image_tag @user, class: 'media-object' %>
+    <ul>
+      <li>
+       <%= render @user.items %>
+      </li>
+    </ul>
+    <div class="col-md-8">
+      <div class="media">
+      <%= render 'item/form' %>
+      </div>
+    </div>
   </div>
-</div>  
+</div>
