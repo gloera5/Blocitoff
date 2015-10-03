@@ -18,6 +18,6 @@ require 'faker'
  end
  items = Item.all
 
- puts "Seed finished"
- puts "#{User.count} posts created"
- puts "#{Item.count} comments created"
+puts "Seed finished"
+puts "#{User.count} users created"
+puts "#{Item.count} items created"
