@@ -1,3 +1,4 @@
-<li><%= item.name %></li>
-
-<%= link_to "Complete", item, method: :delete, class: 'glyphicon glyphicon-ok' %>
+<li>
+  <%= item.name %>
+  <%= link_to "Complete",[@user, item], method: :delete, class: 'glyphicon glyphicon-ok' %>
+</li>

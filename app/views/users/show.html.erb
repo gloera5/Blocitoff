@@ -1,6 +1,6 @@
 <div class="col-md-8">
   <div class="media">
-    <%= image_tag @user, class: 'media-object' %>
+    <%= @user.email %>
     <ul>
       <li>
        <%= render @user.items %>
@@ -8,7 +8,7 @@
     </ul>
     <div class="col-md-8">
       <div class="media">
-      <%= render 'item/form' %>
+      <%= render partial: 'items/form' %>
       </div>
     </div>
   </div>
