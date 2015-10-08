@@ -1,4 +1,6 @@
 <li>
   <%= item.name %>
+  <%= item.days_left %> days to
   <%= link_to "Complete",[@user, item], method: :delete, class: 'glyphicon glyphicon-ok' %>
+  
 </li>
